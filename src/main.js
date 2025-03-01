@@ -1,5 +1,13 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import { createHead } from '@vueuse/head'; // Import createHead
 
-createApp(App).mount('#app')
+// Create the Vue app instance
+const app = createApp(App);
+
+// Use @vueuse/head for managing meta tags
+const head = createHead();
+app.use(head);
+
+// Mount the app to the DOM
+app.mount('#app');
