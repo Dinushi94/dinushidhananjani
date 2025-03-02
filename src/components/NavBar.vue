@@ -42,7 +42,6 @@ const Menu = ref([
     { name: 'Certifications', href: '#certifications' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
-     // Added Certifications link
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
 ]);

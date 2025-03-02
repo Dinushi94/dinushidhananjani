@@ -39,7 +39,7 @@ const AboutSection = defineAsyncComponent(() => import('@/components/AboutSectio
 const TestimonialsSection = defineAsyncComponent(() => import('@/components/TestimonialsSection.vue'));
 const LatestProjSection = defineAsyncComponent(() => import('@/components/LatestProjSection.vue'));
 const ExperienceAndSkills = defineAsyncComponent(() => import('@/components/ExperienceAndSkills.vue'));
-const CertificationsSection = defineAsyncComponent(() => import('@/components/Certifications.vue')); // Import Certifications component
+//const CertificationsSection = defineAsyncComponent(() => import('@/components/Certifications.vue')); // Import Certifications component
 const ContactSection = defineAsyncComponent(() => import('@/components/ContactSection.vue'));
 const Footer = defineAsyncComponent(() => import('@/components/Footer.vue'));
 const BackToTop = defineAsyncComponent(() => import('@/components/BackToTop.vue'));
