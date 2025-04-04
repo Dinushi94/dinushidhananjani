@@ -1,5 +1,5 @@
 <template>
-    <header class="flex justify-between items-center p-6 bg-opacity-50 relative z-20">
+    <header class="fixed w-full top-0 left-0 flex justify-between items-center p-6 bg-opacity-50 bg-[#111827] backdrop-blur-sm z-50">
         <div class="text-white text-3xl font-bold">Dinushi Dhananjani</div>
         <!-- Mobile Toggle Button -->
         <div class="md:hidden z-30">
@@ -58,5 +58,8 @@ const scrollToSection = (href) => {
 </script>
 
 <style scoped>
-/* Add custom styles here if needed */
+/* Ensures the header doesn't cover content when jumping to sections */
+:target {
+    scroll-margin-top: 100px;
+}
 </style>

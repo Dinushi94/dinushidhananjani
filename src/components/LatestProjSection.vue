@@ -27,7 +27,7 @@
                             hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
                             <!-- Link to Project Website -->
                             <a class="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-                                :href="project.webURL">
+                                :href="project.webURL" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" aria-hidden="true" data-slot="icon"
                                     class="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white">
@@ -37,7 +37,7 @@
                             </a>
                             <!-- Link to Project GitHub/GitLab -->
                             <a class="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
-                                :href="project.gitURL">
+                                :href="project.gitURL" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" aria-hidden="true" data-slot="icon"
                                     class="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white">
@@ -73,6 +73,28 @@ import { ref, computed } from 'vue';
 
 // Project Data
 const Projects = ref([
+
+{
+        id: 6,
+        category: 'web development',
+        image: new URL('@/assets/PhotoGalleryImage.png', import.meta.url).href, // Photo gallery image
+        title: 'Photo Gallery Portfolio',
+        description: 'A responsive photo gallery portfolio built with Next.js and Tailwind CSS, featuring image optimization and lightbox functionality.',
+        technologies: ['Next.js', 'Tailwind CSS', 'Image Optimization', 'Responsive Design'],
+        gitURL: 'https://github.com/Dinushi94/studio-light',
+        webURL: 'https://yourphotogallery.example.com'
+    },
+    {
+    id: 7,
+    category: 'web development',
+    image: new URL('@/assets/developer-portfolio-screenshot.png', import.meta.url).href,
+    title: 'Developer Portfolio',
+    description: 'A modern developer portfolio website built with Next.js and Tailwind CSS, featuring dark mode, animations, and project showcase.',
+    technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'Dark Mode'],
+    gitURL: 'https://github.com/Dinushi94/nextJS-Protfolio',
+    webURL: 'https://yourportfolio.example.com'
+},
+
     {
         id: 1,
         category: 'DevOps',
@@ -122,7 +144,8 @@ const Projects = ref([
         technologies: ['Gamification', 'Cybersecurity', 'Research'],
         gitURL: '',
         webURL: ''
-    }
+    },
+   
 ]);
 
 // Category Filter Logic
